@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:4000/api/tickets/view-tickets/";
+const API_URL = "https://zen-query-be-qb3r.onrender.com/api/tickets/view-tickets/";
 
 // Get ticket notes
 const getNotes = async (ticketId, token) => {

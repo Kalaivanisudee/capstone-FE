@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const createTicket = async (ticketData, userToken) => {
-  const URL = `http://localhost:4000/api/tickets/create-ticket`;
+  const URL = `https://zen-query-be-qb3r.onrender.com/api/tickets/create-ticket`;
   try {
     const res = await axios.post(URL, ticketData, {
       headers: { Authorization: `Bearer ${userToken}` },
@@ -13,7 +13,7 @@ const createTicket = async (ticketData, userToken) => {
   }
 };
 const viewTickets = async (userToken) => {
-  const URL = "http://localhost:4000/api/tickets/view-tickets";
+  const URL = "https://zen-query-be-qb3r.onrender.com/api/tickets/view-tickets";
   try {
     const res = await axios.get(URL, {
       headers: { Authorization: `Bearer ${userToken}` },
@@ -26,7 +26,7 @@ const viewTickets = async (userToken) => {
 };
 
 const getTicket = async (ticketId, userToken) => {
-  const URL = `http://localhost:4000/api/tickets/view-tickets/${ticketId}`;
+  const URL = `https://zen-query-be-qb3r.onrender.com/api/tickets/view-tickets/${ticketId}`;
   try {
     const res = await axios.get(URL, {
       headers: { Authorization: `Bearer ${userToken}` },
@@ -38,7 +38,7 @@ const getTicket = async (ticketId, userToken) => {
   }
 };
 const closeTicket = async (ticketId, userToken) => {
-  const URL = `http://localhost:4000/api/tickets/view-tickets/${ticketId}`;
+  const URL = `https://zen-query-be-qb3r.onrender.com/api/tickets/view-tickets/${ticketId}`;
 
   try {
     const res = await axios.put(

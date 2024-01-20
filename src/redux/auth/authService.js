@@ -1,7 +1,7 @@
 
 import axios from "axios";
 export const register = async (user) => {
-  const URL = `http://localhost:4000/api/users/reg`;
+  const URL = `https://zen-query-be-qb3r.onrender.com/api/users/reg`;
   try {
     const res = await axios.post(URL, user);
     if (res.data) {
@@ -14,7 +14,7 @@ export const register = async (user) => {
 };
 
 export const login = async (user) => {
-  const URL = `http://localhost:4000/api/users/login`;
+  const URL = `https://zen-query-be-qb3r.onrender.com/api/users/login`;
   try {
     const res = await axios.post(URL, user);
     if (res.data) {
