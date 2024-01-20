@@ -1,6 +1,8 @@
 import axios from "axios";
 
 const createTicket = async (ticketData, userToken) => {
+
+  console.log("usertoken :" ,userToken);
   const URL = "https://zen-query-be-qb3r.onrender.com/api/tickets/create-ticket";
   try {
     const res = await axios.post(URL, ticketData, {
@@ -26,6 +28,7 @@ const viewTickets = async (userToken) => {
 };
 
 const getTicket = async (ticketId, userToken) => {
+
   const URL = `https://zen-query-be-qb3r.onrender.com/api/tickets/view-tickets/${ticketId}`;
   try {
     const res = await axios.get(URL, {
