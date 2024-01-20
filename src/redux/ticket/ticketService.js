@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const createTicket = async (ticketData, userToken) => {
-  const URL = `https://zen-query-be-qb3r.onrender.com/api/tickets/create-ticket`;
+  const URL = "https://zen-query-be-qb3r.onrender.com/api/tickets/create-ticket";
   try {
     const res = await axios.post(URL, ticketData, {
       headers: { Authorization: `Bearer ${userToken}` },
