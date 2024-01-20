@@ -3,15 +3,12 @@ import { ticketService } from "./ticketService";
 
 export const createTicket = createAsyncThunk(
   "/ticket/create-ticket",
-  async (ticketData) => {
-    const { userToken } = ticketData;
-
+  async (ticketData, thunkAPI) => {
+    const userToken = thunkAPI.getState().auth.user.token;
     try {
-      const result = await ticketService.createTicket(ticketData, userToken);
-      return result;
+      return await ticketService.createTicket(ticketData, userToken);
     } catch (error) {
-    
-      throw new Error(error.message);
+      return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
