@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="home">
       <section className="heading">
-        <h1>Welcome to Ticketing system</h1>
+        <h1>Welcome to Ticket system</h1>
         <p>Please choose from an option below</p>
       </section>
       <div className="header-items">
