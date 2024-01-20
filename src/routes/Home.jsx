@@ -10,11 +10,11 @@ function Home() {
       </section>
       <div className="header-items">
         <Link to="/new-ticket" className="btn btn-reverse btn-block">
-          <FaQuestionCircle /> Create New Ticket
+          <FaQuestionCircle /> Create New Query
         </Link>
 
         <Link to="/tickets" className="btn btn-block">
-          <FaTicketAlt /> View My Tickets
+          <FaTicketAlt /> View My Query
         </Link>
       </div>
     </div>

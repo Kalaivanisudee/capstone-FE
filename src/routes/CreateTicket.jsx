@@ -44,7 +44,7 @@ function NewTicket() {
     <>
       <BackButton url="/" />
       <section className="heading">
-        <h1>Create New Ticket</h1>
+        <h1>Create New Query</h1>
         <p>Please fill out the form below</p>
       </section>
 
